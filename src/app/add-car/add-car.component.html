@@ -1,0 +1,13 @@
+<p>add-car works!</p>
+
+<form (ngSubmit)="onSubmit(addCarForm)" #addCarForm="ngForm">
+    <label>Tüüp</label> <br>
+    <input ngModel name="type" type="text" required> <br>
+    <label>Mark</label> <br>
+    <input ngModel name="mark" type="text" required> <br>
+    <label>Mudel</label> <br>
+    <input ngModel name="model" type="text" required> <br>
+    <label>Aasta</label> <br>
+    <input ngModel name="year" type="number" required> <br>
+    <button [disabled]="addCarForm.invalid">Sisesta</button>
+</form>
